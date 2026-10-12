@@ -1,0 +1,14 @@
+\begin{tabular}{rcccccccccccccccccc}
+\toprule
+ & \multicolumn{6}{c}{A · single path} & \multicolumn{6}{c}{B · dual goal} & \multicolumn{6}{c}{C · dual path} \\
+\cmidrule(lr){2-7}\cmidrule(lr){8-13}\cmidrule(lr){14-19}
+ & \multicolumn{3}{c}{MMD$\times10^3$} & \multicolumn{3}{c}{success [\%]} & \multicolumn{3}{c}{MMD$\times10^3$} & \multicolumn{3}{c}{success [\%]} & \multicolumn{3}{c}{MMD$\times10^3$} & \multicolumn{3}{c}{success [\%]} \\
+$n$ & FM & +CDM & MLP & FM & +CDM & MLP & FM & +CDM & MLP & FM & +CDM & MLP & FM & +CDM & MLP & FM & +CDM & MLP \\
+\midrule
+1024 & \textbf{6.1} & 6.2 & 15.7$^\dagger$ & 86 & 77$^\dagger$ & \textbf{86} & \textbf{27.9} & 56.4$^\dagger$ & 45.6$^\dagger$ & \textbf{93} & 79$^\dagger$ & 85$^\dagger$ & \textbf{52.4} & 72.5$^\dagger$ & 80.1$^\dagger$ & 72 & \textbf{80} & 63$^\dagger$ \\
+512 & 7.0 & \textbf{6.8} & 15.6$^\dagger$ & 86 & 75$^\dagger$ & \textbf{86} & \textbf{32.5} & 61.0$^\dagger$ & 52.2$^\dagger$ & \textbf{90} & 77$^\dagger$ & 84 & \textbf{50.9} & 71.4 & 92.5 & 70 & \textbf{70} & 59 \\
+256 & \textbf{6.0} & 10.1$^\dagger$ & 13.8$^\dagger$ & 84 & 69$^\dagger$ & \textbf{87} & \textbf{36.7} & 42.0 & 55.6$^\dagger$ & \textbf{85} & 70$^\dagger$ & 84 & \textbf{61.4} & 79.5 & 78.5 & \textbf{62} & 46$^\dagger$ & 59 \\
+128 & \textbf{6.2} & 11.9 & 14.6$^\dagger$ & 84 & 60$^\dagger$ & \textbf{87} & \textbf{34.7} & 52.3 & 70.6 & \textbf{86} & 54$^\dagger$ & 80 & 97.7 & \textbf{85.2} & 131.0 & \textbf{54} & 45 & 47 \\
+64 & \textbf{10.1} & 23.2$^\dagger$ & 14.2 & 78 & 47$^\dagger$ & \textbf{85} & \textbf{41.5} & 67.8 & 86.6 & \textbf{69} & 37$^\dagger$ & 65 & \textbf{56.4} & 94.4 & 71.9 & 58 & 36$^\dagger$ & \textbf{62} \\
+\bottomrule
+\end{tabular}

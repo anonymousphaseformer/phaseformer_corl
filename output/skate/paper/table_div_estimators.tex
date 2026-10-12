@@ -1,0 +1,12 @@
+\begin{tabular}{lccccccc}
+\toprule
+ & \multicolumn{4}{c}{synthetic flows: mean estimate (noise) [1/s]} & \multicolumn{3}{c}{datasets: $|\bar\mu|/\bar s$} \\
+\cmidrule(lr){2-5}\cmidrule(lr){6-8}
+estimator & isotropic expansion (+1.2) & y compression (-0.4) & heading compression (-0.4) & strain (+0.0) & A & B & C \\
+\midrule
+kNN $k$=16 & +1.20 (0.07) & -0.40 (0.20) & -0.37 (0.21) & +0.01 (0.29) & 1.27 & 0.48 & 0.90 \\
+kNN $k$=4 & +1.20 (0.09) & -0.40 (0.30) & -0.40 (0.31) & -0.00 (0.47) & 0.92 & 0.40 & 0.81 \\
+KDE $h$=0.2 & +1.10 (0.26) & -0.29 (0.14) & -0.15 (0.11) & +0.10 (0.18) & 1.22 & 0.90 & 0.95 \\
+KDE $h$=0.1 & +1.33 (0.80) & -0.38 (0.14) & -0.30 (0.16) & +0.03 (0.20) & 1.35 & 0.71 & 0.68 \\
+\bottomrule
+\end{tabular}

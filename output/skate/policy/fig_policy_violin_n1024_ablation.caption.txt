@@ -1,0 +1,1 @@
+1024 training demos; each violin: its 5--10 seeds (dots) and their mean (bar). Regularizer arms: $\lambda = 0.05$ held constant, $\lambda = 0.5$ held constant, $\lambda\,0.05 \to 0$ annealed. MMD$^2$ is drawn on a log axis. $\dagger$ marks $p < 0.05$ against MLP+phase+score ($\lambda$=0.5) (Welch over seeds).

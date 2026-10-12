@@ -1,0 +1,28 @@
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{2}{c}{A · single path} & \multicolumn{2}{c}{B · dual goal} & \multicolumn{2}{c}{C · dual path} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+method ($n = 1024$) & MMD$\times10^3$ & success [\%] & MMD$\times10^3$ & success [\%] & MMD$\times10^3$ & success [\%] \\
+\midrule
+FM & 6.1 & 86 & 27.9 & 93 & 52.4 & 72 \\
+FM+CDM ($\lambda$=0.05) & 6.2 & 77$^\dagger$ & 56.4$^\dagger$ & 79$^\dagger$ & 72.5$^\dagger$ & 80 \\
+MLP (no phase) & 15.7$^\dagger$ & 86 & 45.6$^\dagger$ & 85$^\dagger$ & 80.1$^\dagger$ & 63$^\dagger$ \\
+MLP+score ($\lambda$ 0.05$\to$0) & 15.5$^\dagger$ & 87 & 47.0$^\dagger$ & 84$^\dagger$ & 94.7$^\dagger$ & 61 \\
+MLP+score ($\lambda$=0.5) & 24.4$^\dagger$ & 84$^\dagger$ & 110.6$^\dagger$ & 44$^\dagger$ & 42.6 & 87$^\dagger$ \\
+FM+div ($\lambda$ 0.05$\to$0) & 4.0$^\dagger$ & 91$^\dagger$ & 27.3 & 94 & 69.8 & 68 \\
+FM+score ($\lambda$ 0.05$\to$0) & 5.8 & 87 & 26.6 & 92 & 41.0 & 77 \\
+FM+score ($\lambda$=0.5) & 6.8 & 85 & 26.7 & 94 & 31.4$^\dagger$ & 89$^\dagger$ \\
+FM+CDM ($\lambda$ 0.05$\to$0) & 4.1$^\dagger$ & 91$^\dagger$ & 25.4 & 94 & 63.8 & 73 \\
+FM+chunk & 13.6$^\dagger$ & 96$^\dagger$ & 143.3$^\dagger$ & 82$^\dagger$ & 102.4$^\dagger$ & 55$^\dagger$ \\
+FM+chunk+TE & 21.4$^\dagger$ & 95$^\dagger$ & 302.5$^\dagger$ & 6$^\dagger$ & 307.7$^\dagger$ & 2$^\dagger$ \\
+FM+chunk+score ($\lambda$ 0.05$\to$0) & 15.5$^\dagger$ & 95$^\dagger$ & 172.2$^\dagger$ & 80$^\dagger$ & 127.3$^\dagger$ & 50 \\
+FM+chunk+score ($\lambda$ 0.05$\to$0)+TE & 22.6$^\dagger$ & 96$^\dagger$ & 308.2$^\dagger$ & 8$^\dagger$ & 279.6$^\dagger$ & 3$^\dagger$ \\
+\midrule
+Diffusion Policy & \textbf{2.1}$^\dagger$ & 95$^\dagger$ & \textbf{4.0}$^\dagger$ & 95$^\dagger$ & \textbf{1.3}$^\dagger$ & \textbf{98}$^\dagger$ \\
+Diffusion Policy+TE & 5.7 & \textbf{97}$^\dagger$ & 16.6$^\dagger$ & 88$^\dagger$ & 3.7$^\dagger$ & 94$^\dagger$ \\
+MIP & 105.6 & 66 & 61.2 & \textbf{96} & 41.5 & 86$^\dagger$ \\
+MIP+TE & 120.1 & 62 & 93.2$^\dagger$ & 80$^\dagger$ & 49.8 & 72 \\
+ACT & 70.6$^\dagger$ & 31$^\dagger$ & 157.0$^\dagger$ & 95 & 146.3$^\dagger$ & 49$^\dagger$ \\
+ACT+TE & 116.9$^\dagger$ & 21$^\dagger$ & 96.1$^\dagger$ & 79$^\dagger$ & 116.1$^\dagger$ & 73 \\
+\bottomrule
+\end{tabular}

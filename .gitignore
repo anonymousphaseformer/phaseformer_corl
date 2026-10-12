@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Demonstration datasets. scripts/skate/reproduce_datasets.py rebuilds the shipped skate ones
+# bit for bit; regenerate rather than commit.
+data/
+
+# Policy training runs (scripts/skate/run_experiments.py): checkpoints, logs, rollouts.
+runs*/
+
+# Shell redirections from training and rollout runs (no script writes here -- each is a
+# `> logs/...` typed at launch). Kept on disk as a record, out of git.
+logs/
+
+# output/ is intentionally NOT ignored: the README embeds the figures from it.
+
+
+*.DS_Store
+# Lean build (lean/): Mathlib cache and build products.
+.lake/

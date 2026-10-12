@@ -1,0 +1,13 @@
+method,params,net_calls_per_decision,steps_per_decision,ms_decision_b1,ms_step_b1,ms_decision_bN,ms_step_bN,batch_n,s_rollout,horizon,device,hardware,torch
+mlp,133378,1,1,0.1486,0.1486,0.165,0.165,1024,0.0222,50,cuda,NVIDIA GeForce RTX 4090,2.1.2+cu121
+fm,133634,1,1,0.1675,0.1675,0.1843,0.1843,1024,0.023,50,cuda,NVIDIA GeForce RTX 4090,2.1.2+cu121
+dp,65324546,100,8,439.0613,54.8827,1233.3441,154.168,1024,8.6424,50,cuda,NVIDIA GeForce RTX 4090,2.1.2+cu121
+mip,18321952,2,8,2.2023,0.2753,3.0515,0.3814,1024,0.0354,50,cuda,NVIDIA GeForce RTX 4090,2.1.2+cu121
+mlp,133378,1,1,0.0893,0.0893,0.1823,0.1823,64,0.0177,50,cpu,AMD Ryzen 7 5700X 8-Core Processor (8 threads),2.1.2+cu121
+fm,133634,1,1,0.105,0.105,0.2001,0.2001,64,0.0184,50,cpu,AMD Ryzen 7 5700X 8-Core Processor (8 threads),2.1.2+cu121
+dp,65324546,100,8,3422.6295,427.8287,9381.3849,1172.6731,64,65.8569,50,cpu,AMD Ryzen 7 5700X 8-Core Processor (8 threads),2.1.2+cu121
+mip,18321952,2,8,6.9922,0.874,12.2667,1.5333,64,0.0942,50,cpu,AMD Ryzen 7 5700X 8-Core Processor (8 threads),2.1.2+cu121
+fm_chunk,141344,1,8,0.209,0.0261,0.2084,0.0261,1024,0.0157,50,cuda,NVIDIA GeForce RTX 4090,2.1.2+cu121
+fm_chunk,141344,1,8,0.0901,0.0113,0.1668,0.0209,64,0.0076,50,cpu,AMD Ryzen 7 5700X 8-Core Processor (8 threads),2.1.2+cu121
+act,40118978,1,8,2.0187,0.2523,9.5935,1.1992,1024,0.0876,50,cuda,NVIDIA GeForce RTX 4090,2.1.2+cu121
+act,40118978,1,8,5.0576,0.6322,649.4262,81.1783,1024,4.7839,50,cpu,AMD Ryzen 7 5700X 8-Core Processor (8 threads),2.1.2+cu121
